@@ -9,31 +9,33 @@
 <body>
 	<header>
 		<nav>
-			<a href="#" class="brand">My Site</a>
+			<a href="#home" class="brand">My Site</a>
 			<ul class="nav">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
-		<section class="hero">
+		<section id="home" class="hero">
 			<h1>Welcome</h1>
 			<p>A minimal HTML5 boilerplate layout.</p>
 		</section>
-		<section class="content">
+		<section id="about" class="content">
 			<article>
 				<h2>Get started</h2>
 				<p>Edit this file to begin your project.</p>
 			</article>
 		</section>
+		<section id="contact" class="contact">
+			<h2>Contact</h2>
+			<p>Send us a message at <a href="mailto:evanli3738@gmail.com">evanli3738@gmail.com</a>.</p>
+		</section>
 	</main>
 	<footer>
 		<p>&copy; <span id="year"></span> My Site</p>
 	</footer>
-	<script>
-		document.getElementById('year').textContent = new Date().getFullYear();
-	</script>
+	<script src="main.js" defer></script>
 </body>
 </html>
