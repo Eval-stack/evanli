@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Boilerplate</title>
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="#" class="brand">My Site</a>
+			<ul class="nav">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="hero">
+			<h1>Welcome</h1>
+			<p>A minimal HTML5 boilerplate layout.</p>
+		</section>
+		<section class="content">
+			<article>
+				<h2>Get started</h2>
+				<p>Edit this file to begin your project.</p>
+			</article>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; <span id="year"></span> My Site</p>
+	</footer>
+	<script>
+		document.getElementById('year').textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>
