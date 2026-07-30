@@ -15,10 +15,17 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Trebuchet MS", "Comic Sans MS", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, var(--bg), var(--surface));
   color: var(--text);
   line-height: 1.6;
+}
+
+h1,
+h2,
+.brand {
+  font-family: "Courier New", "Lucida Console", monospace;
+  letter-spacing: 0.04em;
 }
 
 header,
