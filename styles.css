@@ -26,7 +26,7 @@ body {
   background: linear-gradient(135deg, var(--bg), var(--surface));
   color: var(--text);
   line-height: 1.8;
-  font-size: 1.08rem;
+  font-size: 1.2rem;
 }
 
 h1,
@@ -69,7 +69,7 @@ nav {
   color: var(--text);
   text-decoration: none;
   font-weight: 700;
-  font-size: 1.45rem;
+  font-size: 1.3rem;
   justify-self: start;
 }
 
@@ -85,7 +85,7 @@ nav {
 .nav a {
   color: var(--muted);
   text-decoration: none;
-  font-size: 1.16rem;
+  font-size: 1.08rem;
 }
 
 .nav a:hover,
@@ -153,11 +153,11 @@ main {
 h1,
 h2 {
   margin-top: 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 h1 {
-  font-size: 1.8rem;
+  font-size: 1.45rem;
 }
 
 a {
