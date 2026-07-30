@@ -76,7 +76,8 @@ main {
 
 .hero,
 .content,
-.contact {
+.contact,
+.page-content {
   background: var(--surface);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
@@ -87,6 +88,41 @@ main {
 
 .hero {
   background: linear-gradient(135deg, var(--surface-2), var(--surface));
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--accent);
+  color: white;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  display: block;
+  padding: 1rem;
+  border-radius: 12px;
+  background: var(--surface-2);
+  color: var(--text);
+  text-decoration: none;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.card:hover,
+.card:focus {
+  transform: translateY(-2px);
+  border-color: var(--accent);
 }
 
 h1,
