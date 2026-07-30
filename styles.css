@@ -13,9 +13,16 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'omori_game2';
+  src: url('omori_game2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
-  font-family: "Trebuchet MS", "Comic Sans MS", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'omori_game2', "Trebuchet MS", "Comic Sans MS", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, var(--bg), var(--surface));
   color: var(--text);
   line-height: 1.6;
@@ -24,7 +31,7 @@ body {
 h1,
 h2,
 .brand {
-  font-family: "Courier New", "Lucida Console", monospace;
+  font-family: 'omori_game2', "Courier New", "Lucida Console", monospace;
   letter-spacing: 0.04em;
 }
 
