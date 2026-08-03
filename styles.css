@@ -1,12 +1,12 @@
 :root {
   color-scheme: dark;
-  --bg: #171215;
-  --surface: #1f1a1d;
-  --surface-2: #2a2328;
-  --text: #f8f1eb;
-  --muted: #d8cfc5;
-  --accent: #9b6b4f;
-  --accent-2: #7bbf89;
+  --bg: #1a0e0f;
+  --surface: #261416;
+  --surface-2: #341a1e;
+  --text: #fff2f0;
+  --muted: #f2c7c0;
+  --accent: #d4555b;
+  --accent-2: #ff8a6b;
 }
 
 * {
@@ -38,13 +38,13 @@ h2,
 
 header,
 footer {
-  background: rgba(15, 23, 42, 0.95);
+  background: linear-gradient(90deg, rgba(72, 16, 22, 0.96), rgba(140, 34, 42, 0.95));
   backdrop-filter: blur(8px);
 }
 
 header {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.14);
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid rgba(255, 185, 185, 0.22);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
   margin-bottom: 1rem;
 }
 
@@ -52,7 +52,7 @@ header::after {
   content: "";
   display: block;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 214, 214, 0.55), transparent);
   margin-top: 0.25rem;
 }
 
