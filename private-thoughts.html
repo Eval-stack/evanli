@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Blog | Evan Li</title>
+  <title>Private Thoughts | Evan Li</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -25,15 +25,16 @@
 
   <main>
     <section class="page-content">
-      <h1>Blog</h1>
-      <p>This is where you can publish updates, ideas, or short writeups.</p>
-    </section>
-
-    <section class="page-content blog-section">
-      <h2>Private Thoughts</h2>
-      <p>Access a hidden entry with a passcode.</p>
-      <div class="blog-actions">
-        <a class="button" href="private-thoughts.html">Open private thoughts</a>
+      <h1>Private Thoughts</h1>
+      <p id="passcode-prompt">Who is my greatest nemesis?</p>
+      <form id="passcode-form" class="passcode-form">
+        <input id="passcode-input" type="password" placeholder="Enter passcode" />
+        <button type="submit">Unlock</button>
+      </form>
+      <p id="passcode-message" class="passcode-message"></p>
+      <div id="private-content" class="hidden">
+        <h2>Private Entry</h2>
+        <p>Some thoughts are only for those who know the way in.</p>
       </div>
     </section>
   </main>

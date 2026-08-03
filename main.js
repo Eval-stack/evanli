@@ -20,6 +20,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  const passcodeForm = document.getElementById('passcode-form');
+  const passcodeInput = document.getElementById('passcode-input');
+  const passcodeMessage = document.getElementById('passcode-message');
+  const privateContent = document.getElementById('private-content');
+  const passcodePrompt = document.getElementById('passcode-prompt');
+
+  if (passcodeForm && passcodeInput && passcodeMessage && privateContent && passcodePrompt) {
+    passcodeForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const entered = passcodeInput.value.trim();
+      const correctPasscode = 'UCSD';
+
+      if (entered.toLowerCase() === correctPasscode.toLowerCase()) {
+        passcodePrompt.classList.add('hidden');
+        passcodeForm.classList.add('hidden');
+        passcodeMessage.textContent = 'Access granted.';
+        privateContent.classList.remove('hidden');
+      } else {
+        passcodeMessage.textContent = 'Incorrect passcode. Try again.';
+        privateContent.classList.add('hidden');
+      }
+    });
+  }
+
   document.querySelectorAll('nav ul.nav a, nav a.brand').forEach(link => {
     link.addEventListener('click', (e) => {
       const href = link.getAttribute('href');
