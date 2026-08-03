@@ -1,12 +1,22 @@
 :root {
   color-scheme: dark;
-  --bg: #12090a;
-  --surface: #1a0f11;
-  --surface-2: #231417;
+  --bg: #090506;
+  --surface: #12090a;
+  --surface-2: #1a0f11;
   --text: #fff2f0;
   --muted: #f0c8c1;
   --accent: #b83c41;
-  --accent-2: #ff6f5e;
+  --accent-2: #9be7a4;
+}
+
+body.light-mode {
+  --bg: #f7ece7;
+  --surface: #fff4ee;
+  --surface-2: #f1ddd3;
+  --text: #2b1814;
+  --muted: #6f5149;
+  --accent: #a0333d;
+  --accent-2: #3f8b45;
 }
 
 * {
@@ -22,8 +32,11 @@
 
 body {
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-family: 'omori_game2', "Trebuchet MS", "Comic Sans MS", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, var(--bg), var(--surface));
+  background: var(--bg);
   color: var(--text);
   line-height: 1.8;
   font-size: 1.2rem;
@@ -36,9 +49,13 @@ h2,
   letter-spacing: 0.04em;
 }
 
-header,
-footer {
+header {
   background: linear-gradient(90deg, rgba(24, 12, 14, 0.97), rgba(44, 18, 22, 0.96));
+  backdrop-filter: blur(8px);
+}
+
+footer {
+  background: var(--bg);
   backdrop-filter: blur(8px);
 }
 
@@ -93,10 +110,28 @@ nav {
   color: var(--accent);
 }
 
+.theme-toggle {
+  justify-self: end;
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(255,255,255,0.08);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  font: inherit;
+}
+
+body.light-mode .theme-toggle {
+  border-color: rgba(0,0,0,0.12);
+  background: rgba(0,0,0,0.06);
+}
+
 main {
+  flex: 1;
   max-width: 960px;
   margin: 0 auto;
   padding: 2rem 1.5rem 4rem;
+  width: 100%;
 }
 
 .hero,
