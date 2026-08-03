@@ -2,45 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  let popupTimer = null;
-  let popupSoundPlayed = false;
-  const popup = document.createElement('div');
-  popup.className = 'inactivity-popup hidden';
-  popup.innerHTML = `
-    <img src="Mewo.png" alt="Mewo" />
-    <div class="inactivity-popup__content">
-      <strong>waiting for something to happen?</strong>
-    </div>
-    <button class="inactivity-popup__close" type="button" aria-label="Close popup">×</button>
-  `;
-  document.body.appendChild(popup);
-
-  const showPopup = () => {
-    popup.classList.remove('hidden');
-    if (!popupSoundPlayed) {
-      const popupSound = new Audio('whitespace.mp3');
-      popupSound.play().catch(() => {});
-      popupSoundPlayed = true;
-    }
-  };
-
-  const hidePopup = () => {
-    popup.classList.add('hidden');
-  };
-
-  const resetTimer = () => {
-    hidePopup();
-    if (popupTimer) clearTimeout(popupTimer);
-    popupTimer = setTimeout(showPopup, 15 * 60 * 1000);
-  };
-
-  ['mousemove', 'keydown', 'click', 'scroll', 'touchstart'].forEach(eventName => {
-    document.addEventListener(eventName, resetTimer, { passive: true });
-  });
-
-  popup.querySelector('.inactivity-popup__close').addEventListener('click', hidePopup);
-  resetTimer();
-
   const toggle = document.querySelector('.theme-toggle');
   const body = document.body;
   const savedTheme = localStorage.getItem('theme');
