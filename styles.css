@@ -1,12 +1,12 @@
 :root {
   color-scheme: dark;
-  --bg: #1a0e0f;
-  --surface: #261416;
-  --surface-2: #341a1e;
+  --bg: #12090a;
+  --surface: #1a0f11;
+  --surface-2: #231417;
   --text: #fff2f0;
-  --muted: #f2c7c0;
-  --accent: #d4555b;
-  --accent-2: #ff8a6b;
+  --muted: #f0c8c1;
+  --accent: #b83c41;
+  --accent-2: #ff6f5e;
 }
 
 * {
@@ -38,13 +38,13 @@ h2,
 
 header,
 footer {
-  background: linear-gradient(90deg, rgba(72, 16, 22, 0.96), rgba(140, 34, 42, 0.95));
+  background: linear-gradient(90deg, rgba(24, 12, 14, 0.97), rgba(44, 18, 22, 0.96));
   backdrop-filter: blur(8px);
 }
 
 header {
-  border-bottom: 2px solid rgba(255, 185, 185, 0.22);
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(255, 185, 185, 0.16);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   margin-bottom: 1rem;
 }
 
