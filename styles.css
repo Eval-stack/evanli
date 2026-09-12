@@ -153,6 +153,76 @@ main {
   background: linear-gradient(135deg, var(--surface-2), var(--surface));
 }
 
+.project-one,
+.project-two,
+.project-three,
+.project-four {
+  border-left-width: 5px;
+}
+
+.project-one {
+  border-left-color: #f2c14e;
+}
+
+.project-one h2 {
+  color: #f2c14e;
+}
+
+.project-two {
+  border-left-color: #78b7e8;
+}
+
+.project-two h2 {
+  color: #78b7e8;
+}
+
+.project-three {
+  border-left-color: #9be7a4;
+}
+
+.project-three h2 {
+  color: #9be7a4;
+}
+
+.project-four {
+  border-left-color: #d9a0ff;
+}
+
+.project-four h2 {
+  color: #d9a0ff;
+}
+
+.education-section,
+.competition-section {
+  font-size: 1.3rem;
+}
+
+.education-section {
+  border-left: 5px solid #9be7a4;
+}
+
+.education-section h2 {
+  color: #9be7a4;
+  font-size: 1.65rem;
+}
+
+.competition-section {
+  border-left: 5px solid #ff9b9b;
+}
+
+.competition-section h2,
+.competition-section h3 {
+  color: #ff9b9b;
+}
+
+.competition-section h2 {
+  font-size: 1.65rem;
+}
+
+.competition-section h3 {
+  font-size: 1.45rem;
+}
+
 .button {
   display: inline-block;
   margin-top: 1rem;
